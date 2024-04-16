@@ -1,0 +1,57 @@
+{
+  "name": "routing",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.3.6",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@uniswap/sdk-core": "^3.1.0",
+    "@uniswap/smart-order-router": "^3.0.6",
+    "@uniswap/v3-sdk": "^3.9.0",
+    "antd": "^5.16.1",
+    "axios": "^1.6.7",
+    "ethers": "^5.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.4.2",
+    "web3": "^4.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "yarn eslint .",
+    "install:chain": "curl -L https://foundry.paradigm.xyz | bash && clear && echo $0 | exec && foundryup",
+    "start:chain": "anvil --chain-id 1337 --fork-url"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "prettier": "^2.8.0",
+    "tailwindcss": "^3.4.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

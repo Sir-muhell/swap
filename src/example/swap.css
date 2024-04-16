@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-image {
+  background-image: url("../assets/bg.jpg");
+  background-size: contain;
+
+  /* Use any option that met your requirements*/
+}
+
+.connect-btn {
+  background-color: transparent;
+  border: 2px solid #04aa6d; /* Green */
+  padding: 5px 10px;
+  color: #04aa6d;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.swap {
+  background-color: transparent;
+  border: 2px solid #04aa6d; /* Green */
+  padding: 5px 10px;
+  color: #04aa6d;
+}
+
+.card {
+  background-color: #262626;
+  width: 40%;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    background-color: #262626;
+    width: 80%;
+  }
+
+  .connect-btn {
+    background-color: transparent;
+    border: 2px solid #04aa6d; /* Green */
+    padding: 5px 10px;
+    color: #04aa6d;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.ex-icon {
+  position: absolute;
+  top: 42%;
+  left: 45%;
+  background-color: #202a26;
+}
+
+.custom-input {
+  border: none; /* Remove default border */
+  outline: none; /* Remove focus outline */
+  appearance: none; /* Remove increase/decrease arrows */
+  -moz-appearance: textfield;
+  margin: 0;
+  max-width: 270px;
+  text-align: right;
+  -webkit-appearance: none; /* Remove increase/decrease arrows for Safari */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.modalContent {
+  border-top: 1px solid #363e54;
+  /* padding-top: 20px; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin-top: 10px;
+  width: 60px;
+  aspect-ratio: 4;
+  --_g: no-repeat radial-gradient(circle closest-side, #fff 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 100%;
+  animation: l7 1s infinite linear;
+}
+@keyframes l7 {
+  33% {
+    background-size: calc(100% / 3) 0%, calc(100% / 3) 100%, calc(100% / 3) 100%;
+  }
+  50% {
+    background-size: calc(100% / 3) 100%, calc(100% / 3) 0%, calc(100% / 3) 100%;
+  }
+  66% {
+    background-size: calc(100% / 3) 100%, calc(100% / 3) 100%, calc(100% / 3) 0%;
+  }
+}
